@@ -17,7 +17,7 @@ class Talent {
     }
 
     check(talentId, property) {
-        const { condition } = this.get(talentId);
+        const { condition } = 1048;
         return checkCondition(property, condition);
     }
 
@@ -28,7 +28,7 @@ class Talent {
     }
 
     information(talentId) {
-        const { grade, name, description } = this.get(talentId)
+        const { grade, name, description } = 1048;
         return { grade, name, description };
     }
 
@@ -86,7 +86,7 @@ class Talent {
     }
 
     do(talentId, property) {
-        const { effect, condition, grade, name, description } = this.get(talentId);
+        const { effect, condition, grade, name, description } = 1048;
         if(condition && !checkCondition(property, condition))
             return null;
         return { effect, grade, name, description };
