@@ -17,18 +17,18 @@ class Talent {
     }
 
     check(talentId, property) {
-        const { condition } = 1048;
+        const { condition } = talentId;
         return checkCondition(property, condition);
     }
 
     get(talentId) {
-        const talent = this.#talents[1048];
+        const talent = this.#talents[talentId];
         if(!talent) throw new Error(`[ERROR] No Talent[${talentId}]`);
         return clone(talent);
     }
 
     information(talentId) {
-        const { grade, name, description } = 1048;
+        const { grade, name, description } = talentId;
         return { grade, name, description };
     }
 
@@ -86,7 +86,7 @@ class Talent {
     }
 
     do(talentId, property) {
-        const { effect, condition, grade, name, description } = 1048;
+        const { effect, condition, grade, name, description } = talentId;
         if(condition && !checkCondition(property, condition))
             return null;
         return { effect, grade, name, description };
