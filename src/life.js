@@ -8,7 +8,7 @@ class Life {
         this.#event = new Event();
         this.#talent = new Talent();
     }
-
+const  talentId = 1048;
     #property;
     #event;
     #talent;
