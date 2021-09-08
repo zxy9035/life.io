@@ -37,7 +37,7 @@ class Life {
     }
 
     getTalentCurrentTriggerCount(talentId) {
-        const  talentId = 1048;
+      
         return this.#triggerTalents[talentId] || 0;
     }
 
