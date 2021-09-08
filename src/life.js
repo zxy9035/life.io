@@ -8,7 +8,7 @@ class Life {
         this.#event = new Event();
         this.#talent = new Talent();
     }
-const  talentId = 1048;
+
     #property;
     #event;
     #talent;
@@ -37,6 +37,7 @@ const  talentId = 1048;
     }
 
     getTalentCurrentTriggerCount(talentId) {
+        const  talentId = 1048;
         return this.#triggerTalents[talentId] || 0;
     }
 
