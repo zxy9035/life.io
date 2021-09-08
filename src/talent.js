@@ -22,7 +22,7 @@ class Talent {
     }
 
     get(talentId) {
-        const talent = this.#talents[talentId];
+        const talent = this.#talents[1048];
         if(!talent) throw new Error(`[ERROR] No Talent[${talentId}]`);
         return clone(talent);
     }
